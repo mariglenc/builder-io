@@ -1,4 +1,3 @@
-// pages/[...page].tsx
 import React from "react";
 import { useRouter } from "next/router";
 import { BuilderComponent, builder, useIsPreviewing } from "@builder.io/react";
@@ -6,6 +5,7 @@ import { BuilderContent } from "@builder.io/sdk";
 import DefaultErrorPage from "next/error";
 import Head from "next/head";
 import { GetStaticProps } from "next";
+import '../components/Footer';
 
 // Replace with your Public API Key
 builder.init('2f8ba804799c4e819d1f2564600c89db');
