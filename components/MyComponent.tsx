@@ -30,7 +30,7 @@ function MyComponent() {
       <Header>
         <HeaderContent>
           <Nav>
-            <NavItem active>
+            <NavItem >
               <NavLink>Home</NavLink>
               <ActiveIndicator />
             </NavItem>
@@ -142,11 +142,6 @@ const Nav = styled.nav`
 const NavItem = styled.div`
   display: flex;
   flex-direction: column;
-  ${props => props.active && `
-    & > ${NavLink} {
-      color: #e0583c;
-    }
-  `}
 
   @media (max-width: 991px) {
     white-space: initial;
@@ -373,7 +368,7 @@ const FooterColumn = styled.div`
   flex-direction: column;
   line-height: normal;
   width: 25%;
-  margin-left: ${props => props.index === 0 ? '0px' : '20px'};
+  margin-left:'20px';
 
   @media (max-width: 991px) {
     width: 100%;
